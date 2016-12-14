@@ -1,0 +1,51 @@
+
+@media (max-width: 650px) {
+  .lovingit span {
+    font-size: 3rem !important;
+    font-weight: 900;
+    letter-spacing: 0rem;
+    color: #333;
+    text-align: center;
+  }
+  #logo {
+    margin: auto;
+    float: none;
+    text-align: center;
+  }
+  .lovingit {
+    text-align: center;
+  }
+  .prj_img {
+    max-width: 100% !important;
+    margin: .7rem 0;
+    display: inline-block;
+    opacity: .8;
+    filter: none !important;
+  }
+
+  .lovingit, .whoami {
+    margin: 0 .5rem !important;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+
+  .w50 {
+    width: auto !important;
+  }
+
+  #menu {
+    display: none !important;
+  }
+
+}
+
+
+
+@media (min-width: 1500px) {
+  .lovingit span {
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: -.3rem;
+    color: #333;
+  }
+}
