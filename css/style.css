@@ -1,88 +1,30 @@
 html {
   height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   position: relative;
   font-family: "Montserrat", sans-serif;
+
 }
+
 a {
   text-decoration: none;
 }
-.contact_icon {
-  width: 80px;
-  margin-top: 30px;
-}
-.w50 {
-  width: 48%;
-}
-.floaty {
-  float: left;
-}
-.floatyr {
-  float: right;
-}
-.clear {
-  clear: both;
-}
-.md-blue {
-  color: #444 !important;
-}
-.panel {
-  min-height: 100%;
-}
-#pnl_contact {
 
-  overflow: hidden !important;
-  position: relative;
-}
-.skewme {
-  transform: skewY(4.8deg);
-  background: #555;
-  width: 100%;
-  height: calc(100% + 200px);
-  top: 200px;
-  position: absolute;
-  z-index: -1;
-}
-#pnl_samples {
-  margin-top: 10rem;
-}
-.prj_img {
-  max-width: 30%;
-  margin: .7rem;
-  display: inline-block;
-  opacity: .8;
-  transition: all .4s;
-  filter: grayscale(100%);
-}
-.prj_img:hover {
-  opacity: 1;
-  filter: grayscale(0%);
-}
-.prj_img img {
-  width: 100%;
-}
-.prj_img span {
-  font-size: .8rem !important;
-  letter-spacing: normal !important;
-  font-weight: 100 !important;
-  font-family: "Open Sans";
-  color: #888 !important;
-}
+
+/* CONTAINERS & WRAP */
 #logo {
   padding: 3rem;
   float: left;
 }
-#logo img {
-  transition: all 1s;
-}
+  #logo img {
+    transition: all 1s;
+  }
 
-#logo:hover img {
-
-}
 #menu {
   float: right;
   padding: 3rem 8rem;
@@ -97,62 +39,140 @@ a {
   margin: 0 1rem;
   letter-spacing: -.08rem;
 }
-.inv {
-    background: #fff;
-}
-.highblue {
-  background:  #e2f0f2;
-  display: inline-block;
-  padding: 0 3px;
-  margin: 1px;
-}
 
-.highgrey {
-  background:  #ececec;
-  display: inline-block;
-  padding: 0 3px;
-  margin: 1px;
-}
-
-.lovingit, .whoami {
-
+.panel {
+  min-height: 100%;
+  clear: both;
   margin-left: 5rem;
-  padding-top: 16rem;
-  margin-bottom: 3rem;
+  padding-bottom: 30rem;
 }
-.whoami {
-  margin-top: 0rem;
-  padding-top: 3rem;
+
+.intro {
+  padding-top: 5rem;
+  padding-bottom: 0;
 }
-.lovingit span {
-  font-size: 4rem;
+
+.footer {
+  min-height: 100%;
+  clear: both;
+  padding-bottom: 3rem;
+  padding-top: 6rem;
+  overflow: hidden !important;
+  position: relative;
+}
+
+.skewme {
+  transform: skewY(4.8deg);
+  background: #555;
+  width: 100%;
+  height: calc(100% + 200px);
+  top: 100px;
+  position: absolute;
+  z-index: -1;
+}
+
+/* HEADERS */
+h1,h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+  margin: 0;
+}
+
+h1 {
+  font-size: 6rem;
   font-weight: 900;
   letter-spacing: -.3rem;
   color: #333;
+  margin-bottom: 2.5rem;
 }
-.thatsit {
-  color: #fff;
-  margin-top: 20rem;
-  padding-top: 0rem;
-  margin-left: 5rem;
-  font-size: 2rem;
-  width: 70%;
-}
-.whoami span {
-  font-size: 2.2rem;
-  font-weight: 900;
-  letter-spacing: -.1rem;
 
-  display: block;
-  color: #000;
+h2 {
+  font-size: 5rem;
+  letter-spacing: -.3rem;
+  line-height: 1em;
 }
-span.content {
+
+h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 5rem;
+}
+
+
+/* TEXTUAL ELEMENTS */
+.content {
+  font-size: 1.8rem;
+  letter-spacing: normal;
+  font-weight: 100;
+  width: 50%;
+}
+
+.lead, .textual {
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+}
+
+.lead {
   font-size: 1.8rem;
   letter-spacing: normal;
   font-weight: 100;
   font-family: "Open Sans";
   width: 100%;
 }
+
+.textual {
+  color: #666;
+  font-size: .7em;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.textual b {
+  background:  #e2f0f2;
+  display: inline-block;
+  padding: 0 3px;
+  margin: 1px;
+}
+
+
+/* PROJECT SHOWCASE */
+#showcase {
+  clear: both;
+  padding: 3rem 0;
+}
+
+  #showcase .project {
+    max-width: 30%;
+    margin: .7rem;
+    display: inline-block;
+    opacity: .8;
+    transition: all .4s;
+    filter: grayscale(100%);
+  }
+    #showcase .project:hover {
+      opacity: 1;
+      filter: grayscale(0%);
+    }
+
+  #showcase .project img {
+    width: 100%;
+  }
+
+  #showcase .project span {
+    font-size: .8rem !important;
+    letter-spacing: normal !important;
+    font-weight: 100 !important;
+    font-family: "Open Sans";
+    color: #888 !important;
+  }
+
+
+
+
+
+
+
 .btn-clear {
   border: solid 2px #333;
   font-weight: 600;

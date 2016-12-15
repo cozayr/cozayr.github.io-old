@@ -1,25 +1,27 @@
-console.log("enabled");
-
 $(document).ready(function() {
 
-  $(".btn_readywhy").click(function() {
+  // ##############################
+  // PAGE NAVIGATION ELEMENTS
+  // ##############################
+
+  $(".btn_about").click(function() {
     $('html, body').animate({
-       scrollTop: $("#pnl_readywhy").offset().top
-   }, 700);
+       scrollTop: $(".panel").eq(1).offset().top - 50
+   }, 700, 'easeInOutSine');
    return false;
   });
 
   $(".btn_samples").click(function() {
     $('html, body').animate({
-       scrollTop: $("#pnl_samples").offset().top
-   }, 700);
+       scrollTop: $(".panel").eq(2).offset().top - 50
+   }, 700, 'easeInOutSine');
    return false;
   });
 
   $(".btn_contact").click(function() {
     $('html, body').animate({
-       scrollTop: $("#pnl_contact").offset().top
-   }, 700);
+       scrollTop: $(".footer").offset().top - 50
+   }, 700, 'easeInOutSine');
    return false;
  });
 
