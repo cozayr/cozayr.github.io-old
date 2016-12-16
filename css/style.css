@@ -41,22 +41,36 @@ a {
 }
 
 #sidemenu {
-  position: absolute;
-  left: -4rem;
+  position: fixed;
+  z-index: 3;
+  right: 0;
   top: 0;
-  width: 4rem;
-  padding: .2rem;
-  text-align: center;
+  width: 3rem;
+  padding: .1rem;
+  padding-left: .5rem;
+  padding-top: 3rem;
+  text-align: left;
   height: 100%;
+  opacity: 0;
+  background: #fff;
 }
   #sidemenu a {
-    display: block;
-
-    position: absolute;
+    display: inline-block;
+    padding: .5rem 0;
+    filter: grayscale(100%);
+    opacity: .5;
+    transition: all .4s;
+    text-align: center;
+    border-bottom: solid 1px #ccc;
   }
   #sidemenu a img {
-    width: 50%;
+    width: 30%;
   }
+      #sidemenu a:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+        background: #ececec;
+      }
 
 .panel {
   min-height: 100%;
@@ -128,7 +142,7 @@ h3 {
 
 .lead, .textual {
   font-family: "Open Sans";
-  margin: 0;
+  margin: 2rem 0;
   padding: 0;
 }
 
@@ -148,7 +162,8 @@ h3 {
 }
 
 .textual b {
-  background:  #e2f0f2;
+  color:  #333;
+  font-size: .9em;
   display: inline-block;
   padding: 0 3px;
   margin: 1px;

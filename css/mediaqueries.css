@@ -1,6 +1,9 @@
 
 @media (max-width: 650px) {
 
+  #submenu {
+    display: none !important;
+  }
   h1 {
     font-size: 3rem !important;
     font-weight: 900;
