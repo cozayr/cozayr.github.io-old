@@ -40,11 +40,30 @@ a {
   letter-spacing: -.08rem;
 }
 
+#sidemenu {
+  position: absolute;
+  left: -4rem;
+  top: 0;
+  width: 4rem;
+  padding: .2rem;
+  text-align: center;
+  height: 100%;
+}
+  #sidemenu a {
+    display: block;
+
+    position: absolute;
+  }
+  #sidemenu a img {
+    width: 50%;
+  }
+
 .panel {
   min-height: 100%;
   clear: both;
   margin-left: 5rem;
   padding-bottom: 30rem;
+  position: relative;
 }
 
 .intro {
