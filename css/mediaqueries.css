@@ -11,7 +11,15 @@
     color: #333;
     text-align: center;
   }
-
+  .intro {
+      padding-top: 2rem;
+  }
+  .btn-clear {
+    margin: 0 auto !important;
+    display: block;
+    width: 200px;
+    text-align: center;
+  }
   .panel {
     margin: 0 .5rem;
   }
@@ -37,7 +45,7 @@
     opacity: .8;
     filter: none !important;
   }
-  
+
   h2 {
     margin: 0 .5rem !important;
     padding: 0;
